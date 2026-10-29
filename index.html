@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedTech 2030 · El cuerpo humano reinventado por la tecnología</title>
+  <meta name="description" content="Explora de forma visual e interactiva cómo la IA, la impresión 3D, la robótica, la nanotecnología y la edición genética están transformando la medicina.">
+  <meta name="theme-color" content="#0a4d8c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <!-- Enlace para saltar al contenido (accesibilidad con teclado) -->
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- Barra de progreso de lectura -->
+  <div class="progreso" aria-hidden="true"><div class="progreso__barra" id="barra-progreso"></div></div>
+
+  <!-- ===================== CABECERA ===================== -->
+  <header class="cabecera">
+    <nav class="nav contenedor" aria-label="Navegación principal">
+      <a class="nav__logo" href="#inicio" aria-label="MedTech 2030, ir al inicio">
+        <span class="nav__logo-icono" aria-hidden="true">🧬</span> MedTech<span class="acento">2030</span>
+      </a>
+
+      <button class="nav__menu-btn" id="btn-menu" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__lista" id="menu-principal">
+        <li><a href="#mapa">Cuerpo</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#ranking">Ranking</a></li>
+        <li><a href="#comparador">Antes vs Ahora</a></li>
+        <li><a href="#linea-tiempo">Historia</a></li>
+        <li><a href="#etica">Ética</a></li>
+        <li><a href="#suscripcion">Suscríbete</a></li>
+      </ul>
+
+      <button class="tema-btn" id="btn-tema" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+        <span class="tema-btn__icono" aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Aviso obligatorio, siempre visible bajo la cabecera -->
+  <div class="aviso-medico" role="note">
+    <span aria-hidden="true">⚕️</span>
+    Este sitio es solo informativo y educativo. No reemplaza la consulta con un profesional de la salud.
+  </div>
+
+  <main id="contenido">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__contenido contenedor">
+        <p class="hero__etiqueta">Medicina · Tecnología · Futuro</p>
+        <h1 class="hero__titulo" id="titulo-hero">
+          <span class="holo-texto">MedTech 2030</span>
+          <span class="hero__subtitulo">el cuerpo humano reinventado por la tecnología</span>
+        </h1>
+        <p class="hero__texto">
+          Inteligencia artificial, impresión 3D, robótica, nanotecnología y edición genética:
+          descubre cómo están cambiando la forma de diagnosticar, operar y curar.
+        </p>
+        <div class="hero__acciones">
+          <a class="btn btn--primario" href="#mapa">Explorar el cuerpo <span aria-hidden="true">→</span></a>
+          <a class="btn btn--fantasma" href="#linea-tiempo">Ver la historia</a>
+        </div>
+        <ul class="hero__chips" aria-label="Áreas tecnológicas">
+          <li>🤖 IA</li><li>🖨️ Impresión 3D</li><li>🦾 Robótica</li><li>🔬 Nanotecnología</li><li>🧬 Edición genética</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== MAPA DEL CUERPO ===================== -->
+    <section class="seccion" id="mapa" aria-labelledby="titulo-mapa">
+      <div class="contenedor">
+        <header class="seccion__cabecera revelar">
+          <p class="seccion__etiqueta">01 · Mapa interactivo</p>
+          <h2 id="titulo-mapa">Explora el cuerpo</h2>
+          <p>Toca un punto luminoso para descubrir qué tecnología está transformando esa parte del cuerpo.</p>
+        </header>
+
+        <div class="mapa revelar">
+          <div class="mapa__figura holo-panel">
+            <svg class="cuerpo-svg" viewBox="0 0 300 600" role="group" aria-label="Silueta humana con zonas interactivas">
+              <defs>
+                <pattern id="rejilla" width="12" height="12" patternUnits="userSpaceOnUse">
+                  <path d="M12 0H0V12" fill="none" class="cuerpo-svg__rejilla"/>
+                </pattern>
+                <linearGradient id="grad-cuerpo" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" class="cuerpo-svg__stop1"/>
+                  <stop offset="100%" class="cuerpo-svg__stop2"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Silueta -->
+              <g class="cuerpo-svg__silueta">
+                <ellipse cx="150" cy="62" rx="36" ry="44"/>
+                <path d="M136 102 L136 124 L164 124 L164 102 Z"/>
+                <path d="M95 128 Q150 116 205 128 L215 230 Q207 290 196 320 L104 320 Q93 290 85 230 Z"/>
+                <path d="M95 132 Q70 140 66 190 L52 300 Q48 330 56 348 L68 348 L74 305 L92 208 Z"/>
+                <path d="M205 132 Q230 140 234 190 L248 300 Q252 330 244 348 L232 348 L226 305 L208 208 Z"/>
+                <path d="M106 318 L101 450 L98 572 L128 572 L134 450 L148 332 Z"/>
+                <path d="M194 318 L199 450 L202 572 L172 572 L166 450 L152 332 Z"/>
+              </g>
+              <!-- Relleno de rejilla tipo holograma -->
+              <g class="cuerpo-svg__trama" aria-hidden="true">
+                <ellipse cx="150" cy="62" rx="36" ry="44"/>
+                <path d="M95 128 Q150 116 205 128 L215 230 Q207 290 196 320 L104 320 Q93 290 85 230 Z"/>
+              </g>
+              <!-- Línea de escaneo animada -->
+              <rect class="cuerpo-svg__escaner" x="40" y="0" width="220" height="3" aria-hidden="true"/>
+
+              <!-- Puntos interactivos (se activan con clic, Enter o Espacio) -->
+              <g class="punto" data-zona="cerebro" tabindex="0" role="button" aria-label="Cerebro">
+                <circle class="punto__pulso" cx="150" cy="44" r="13"/><circle class="punto__nucleo" cx="150" cy="44" r="6"/>
+              </g>
+              <g class="punto" data-zona="ojos" tabindex="0" role="button" aria-label="Ojos">
+                <circle class="punto__pulso" cx="150" cy="76" r="11"/><circle class="punto__nucleo" cx="150" cy="76" r="5"/>
+              </g>
+              <g class="punto" data-zona="pulmones" tabindex="0" role="button" aria-label="Pulmones">
+                <circle class="punto__pulso" cx="124" cy="178" r="13"/><circle class="punto__nucleo" cx="124" cy="178" r="6"/>
+              </g>
+              <g class="punto" data-zona="corazon" tabindex="0" role="button" aria-label="Corazón">
+                <circle class="punto__pulso" cx="170" cy="172" r="13"/><circle class="punto__nucleo" cx="170" cy="172" r="6"/>
+              </g>
+              <g class="punto" data-zona="adn" tabindex="0" role="button" aria-label="ADN">
+                <circle class="punto__pulso" cx="150" cy="268" r="13"/><circle class="punto__nucleo" cx="150" cy="268" r="6"/>
+              </g>
+              <g class="punto" data-zona="brazos" tabindex="0" role="button" aria-label="Brazos">
+                <circle class="punto__pulso" cx="62" cy="252" r="13"/><circle class="punto__nucleo" cx="62" cy="252" r="6"/>
+              </g>
+              <g class="punto" data-zona="huesos" tabindex="0" role="button" aria-label="Huesos">
+                <circle class="punto__pulso" cx="118" cy="440" r="13"/><circle class="punto__nucleo" cx="118" cy="440" r="6"/>
+              </g>
+            </svg>
+
+            <!-- Alternativa en botones (útil en móvil y con lector de pantalla) -->
+            <div class="mapa__zonas" role="group" aria-label="Elegir zona del cuerpo">
+              <button class="chip" data-zona="cerebro">🧠 Cerebro</button>
+              <button class="chip" data-zona="ojos">👁️ Ojos</button>
+              <button class="chip" data-zona="corazon">🫀 Corazón</button>
+              <button class="chip" data-zona="pulmones">🫁 Pulmones</button>
+              <button class="chip" data-zona="brazos">🦾 Brazos</button>
+              <button class="chip" data-zona="huesos">🦴 Huesos</button>
+              <button class="chip" data-zona="adn">🧬 ADN</button>
+            </div>
+          </div>
+
+          <article class="mapa__panel holo-panel" id="panel-zona" aria-live="polite">
+            <div class="panel-vacio">
+              <span class="panel-vacio__icono" aria-hidden="true">👆</span>
+              <h3>Elige una zona</h3>
+              <p>Selecciona un punto del cuerpo para ver la tecnología, su estado actual y un dato curioso.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TARJETAS ===================== -->
+    <section class="seccion seccion--alterna" id="tecnologias" aria-labelledby="titulo-tecnologias">
+      <div class="contenedor">
+        <header class="seccion__cabecera revelar">
+          <p class="seccion__etiqueta">02 · Tecnologías</p>
+          <h2 id="titulo-tecnologias">Lo que ya está cambiando la medicina</h2>
+          <p>¿Cuál te sorprende más? Vota de forma anónima con «Me impresiona».</p>
+        </header>
+        <div class="tarjetas" id="lista-tarjetas" aria-live="polite">
+          <p class="estado-carga">Cargando...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RANKING ===================== -->
+    <section class="seccion" id="ranking" aria-labelledby="titulo-ranking">
+      <div class="contenedor contenedor--estrecho">
+        <header class="seccion__cabecera revelar">
+          <p class="seccion__etiqueta">03 · Ranking</p>
+          <h2 id="titulo-ranking">Las 5 que más impresionan</h2>
+          <p>Resultados en vivo de los votos anónimos de los visitantes.</p>
+        </header>
+        <div class="ranking holo-panel revelar">
+          <ol class="ranking__lista" id="lista-ranking" aria-live="polite">
+            <li class="estado-carga">Cargando...</li>
+          </ol>
+          <button class="btn btn--fantasma btn--pequeno" id="btn-actualizar-ranking">↻ Actualizar ranking</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANTES VS AHORA ===================== -->
+    <section class="seccion seccion--alterna" id="comparador" aria-labelledby="titulo-comparador">
+      <div class="contenedor">
+        <header class="seccion__cabecera revelar">
+          <p class="seccion__etiqueta">04 · Antes vs Ahora</p>
+          <h2 id="titulo-comparador">Así ha cambiado la medicina</h2>
+          <p>Desliza el control para comparar la medicina de antes con la de ahora.</p>
+        </header>
+
+        <div class="comparador revelar">
+          <div class="comparador__pestanas" role="tablist" aria-label="Elegir comparación" id="pestanas-comparador"></div>
+
+          <div class="comparador__marco holo-panel" id="marco-comparador">
+            <div class="comparador__lado comparador__lado--antes" id="lado-antes"></div>
+            <div class="comparador__lado comparador__lado--ahora" id="lado-ahora"></div>
+            <div class="comparador__linea" id="linea-comparador" aria-hidden="true"><span>⇆</span></div>
+          </div>
+          <label class="sr-only" for="rango-comparador">Desplazar comparación entre antes y ahora</label>
+          <input class="comparador__rango" type="range" id="rango-comparador" min="0" max="100" value="50">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LÍNEA DE TIEMPO ===================== -->
+    <section class="seccion" id="linea-tiempo" aria-labelledby="titulo-linea">
+      <div class="contenedor contenedor--estrecho">
+        <header class="seccion__cabecera revelar">
+          <p class="seccion__etiqueta">05 · Historia</p>
+          <h2 id="titulo-linea">De los rayos X a la IA médica</h2>
+          <p>Los hitos que nos trajeron hasta aquí.</p>
+        </header>
+        <ol class="linea" id="lista-linea" aria-live="polite">
+          <li class="estado-carga">Cargando...</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== ÉTICA Y RETOS ===================== -->
+    <section class="seccion seccion--alterna" id="etica" aria-labelledby="titulo-etica">
+      <div class="contenedor">
+        <header class="seccion__cabecera revelar">
+          <p class="seccion__etiqueta">06 · Ética y retos</p>
+          <h2 id="titulo-etica">No todo es tecnología</h2>
+          <p>Cada avance trae preguntas que la sociedad debe responder.</p>
+        </header>
+        <div class="etica">
+          <article class="etica__item holo-panel revelar">
+            <span class="etica__icono" aria-hidden="true">🔒</span>
+            <h3>Privacidad de los datos médicos</h3>
+            <p>Historias clínicas, genomas y datos de wearables son muy sensibles. ¿Quién puede verlos, venderlos o usarlos para entrenar una IA? Se necesitan leyes claras y consentimiento real.</p>
+          </article>
+          <article class="etica__item holo-panel revelar">
+            <span class="etica__icono" aria-hidden="true">⚖️</span>
+            <h3>Acceso desigual</h3>
+            <p>Un robot quirúrgico o una terapia génica pueden costar muchísimo. Si solo llegan a unos pocos, la tecnología puede aumentar la brecha entre quienes tienen acceso a la salud y quienes no.</p>
+          </article>
+          <article class="etica__item holo-panel revelar">
+            <span class="etica__icono" aria-hidden="true">⚠️</span>
+            <h3>Errores y sesgos de la IA</h3>
+            <p>Una IA aprende de los datos que recibe: si están incompletos o sesgados, puede fallar más con ciertos grupos. Por eso la decisión final debe seguir en manos de profesionales.</p>
+          </article>
+          <article class="etica__item holo-panel revelar">
+            <span class="etica__icono" aria-hidden="true">🧬</span>
+            <h3>Límites de la edición genética</h3>
+            <p>Corregir una enfermedad no es lo mismo que «mejorar» a una persona. Los cambios en embriones podrían heredarse, por eso muchos países los prohíben y el debate sigue abierto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SUSCRIPCIÓN ===================== -->
+    <section class="seccion" id="suscripcion" aria-labelledby="titulo-suscripcion">
+      <div class="contenedor contenedor--estrecho">
+        <div class="suscripcion holo-panel revelar" id="caja-suscripcion">
+          <span class="suscripcion__icono" aria-hidden="true">📬</span>
+          <h2 id="titulo-suscripcion">Recibe novedades de MedTech</h2>
+          <p>Suscripción opcional. Solo te pedimos tu correo electrónico.</p>
+
+          <form class="suscripcion__form" id="form-suscripcion" novalidate>
+            <label class="sr-only" for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" maxlength="254" required aria-describedby="nota-privacidad mensaje-suscripcion">
+            <!-- Campo trampa anti-bots: oculto para personas -->
+            <div class="trampa" aria-hidden="true">
+              <label for="website">No rellenar</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button class="btn btn--primario" type="submit" id="btn-suscribir">Suscribirme</button>
+          </form>
+          <p class="suscripcion__mensaje" id="mensaje-suscripcion" role="status"></p>
+          <p class="suscripcion__nota" id="nota-privacidad">🔐 Solo usaremos tu correo para enviarte novedades. Nada más.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <p class="pie__logo">🧬 MedTech<span class="acento">2030</span></p>
+      <p>Contacto: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+      <p><a href="https://github.com/TU-USUARIO/medtech-2030" target="_blank" rel="noopener noreferrer">Ver el código en GitHub</a></p>
+      <p class="pie__aviso">⚕️ Este sitio es solo informativo y educativo. No reemplaza la consulta con un profesional de la salud.</p>
+      <p class="pie__anio">© <span id="anio-actual">2030</span> MedTech 2030 · Sin cookies de rastreo · Votos anónimos</p>
+    </div>
+  </footer>
+
+  <!-- Notificaciones flotantes -->
+  <div class="aviso-flotante" id="aviso-flotante" role="status" aria-live="polite"></div>
+</body>
+</html>

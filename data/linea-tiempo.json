@@ -1,0 +1,82 @@
+{
+  "hitos": [
+    {
+      "anio": 1895,
+      "titulo": "Descubrimiento de los rayos X",
+      "icono": "☢️",
+      "descripcion": "Wilhelm Röntgen descubre los rayos X. Por primera vez se puede «ver» dentro del cuerpo sin abrirlo."
+    },
+    {
+      "anio": 1903,
+      "titulo": "El electrocardiógrafo",
+      "icono": "💓",
+      "descripcion": "Willem Einthoven desarrolla un aparato capaz de registrar la actividad eléctrica del corazón: nace el electrocardiograma moderno."
+    },
+    {
+      "anio": 1958,
+      "titulo": "Primer marcapasos implantable",
+      "icono": "🔋",
+      "descripcion": "En Suecia se implanta el primer marcapasos dentro del cuerpo de un paciente, un pequeño dispositivo que mantiene el ritmo del corazón."
+    },
+    {
+      "anio": 1971,
+      "titulo": "Primera tomografía computarizada",
+      "icono": "🌀",
+      "descripcion": "Se realiza el primer escáner TC a un paciente: una computadora combina muchas radiografías para crear cortes del interior del cuerpo."
+    },
+    {
+      "anio": 1977,
+      "titulo": "Resonancia magnética del cuerpo humano",
+      "icono": "🧲",
+      "descripcion": "Se obtiene una de las primeras imágenes de resonancia magnética de un cuerpo humano completo, sin usar radiación."
+    },
+    {
+      "anio": 1985,
+      "titulo": "Un robot entra al quirófano",
+      "icono": "🦿",
+      "descripcion": "El brazo robótico PUMA 560 se usa para guiar con precisión una aguja en una biopsia cerebral, uno de los primeros usos de un robot en cirugía."
+    },
+    {
+      "anio": 2000,
+      "titulo": "Cirugía robótica aprobada",
+      "icono": "🤖",
+      "descripcion": "Se aprueba en EE. UU. un sistema de cirugía robótica para procedimientos laparoscópicos, que se extenderá a hospitales de todo el mundo."
+    },
+    {
+      "anio": 2003,
+      "titulo": "Genoma humano completado",
+      "icono": "🧬",
+      "descripcion": "El Proyecto Genoma Humano publica la secuencia casi completa de nuestro ADN, base de la medicina genómica y personalizada."
+    },
+    {
+      "anio": 2012,
+      "titulo": "Nace la técnica CRISPR-Cas9",
+      "icono": "✂️",
+      "descripcion": "Se publica cómo usar CRISPR-Cas9 para cortar el ADN en un punto exacto, abriendo la puerta a la edición genética precisa."
+    },
+    {
+      "anio": 2018,
+      "titulo": "Diagnóstico autónomo con IA",
+      "icono": "👁️",
+      "descripcion": "Se autoriza en EE. UU. el primer sistema de IA que detecta retinopatía diabética en fotos de la retina sin necesidad de un especialista."
+    },
+    {
+      "anio": 2020,
+      "titulo": "IA que predice proteínas y auge de la telemedicina",
+      "icono": "🧩",
+      "descripcion": "AlphaFold logra predecir la forma de las proteínas con gran precisión y, por la pandemia, la telemedicina se vuelve parte del día a día."
+    },
+    {
+      "anio": 2023,
+      "titulo": "Primera terapia CRISPR aprobada",
+      "icono": "💉",
+      "descripcion": "Reino Unido y luego EE. UU. aprueban la primera terapia basada en CRISPR, para la anemia falciforme y la beta-talasemia."
+    },
+    {
+      "anio": 2024,
+      "titulo": "La IA médica llega a la práctica",
+      "icono": "🤖",
+      "descripcion": "Ya hay centenares de dispositivos médicos con IA autorizados, sobre todo en imagen, y avanzan los ensayos con implantes cerebrales en personas."
+    }
+  ]
+}

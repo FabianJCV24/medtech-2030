@@ -1,0 +1,136 @@
+{
+  "tecnologias": [
+    {
+      "id": "interfaz-cerebro",
+      "nombre": "Interfaces cerebro-computadora",
+      "zona": "cerebro",
+      "categoria": "mapa",
+      "area": "Robótica e inteligencia artificial",
+      "icono": "🧠",
+      "estado": "En pruebas",
+      "explicacion": "Pequeños sensores leen la actividad eléctrica de las neuronas y una IA la traduce en órdenes: mover un cursor, escribir texto o controlar un brazo robótico solo con el pensamiento.",
+      "datoCurioso": "Personas con parálisis que participan en ensayos clínicos ya han logrado escribir mensajes en una pantalla usando únicamente la actividad de su cerebro."
+    },
+    {
+      "id": "ia-retina",
+      "nombre": "IA que analiza la retina",
+      "zona": "ojos",
+      "categoria": "mapa",
+      "area": "Inteligencia artificial",
+      "icono": "👁️",
+      "estado": "Ya existe",
+      "explicacion": "Algoritmos entrenados con miles de imágenes del fondo de ojo detectan señales tempranas de retinopatía diabética y otras enfermedades, a veces antes de que aparezcan síntomas.",
+      "datoCurioso": "En 2018 se autorizó en EE. UU. el primer sistema de IA capaz de detectar retinopatía diabética sin que un especialista tenga que revisar la imagen."
+    },
+    {
+      "id": "corazon-bioimpreso",
+      "nombre": "Corazón bioimpreso en 3D",
+      "zona": "corazon",
+      "categoria": "mapa",
+      "area": "Impresión 3D",
+      "icono": "🫀",
+      "estado": "Futuro",
+      "explicacion": "Las bioimpresoras depositan, capa a capa, «tintas» hechas con células vivas para fabricar tejidos. La meta a largo plazo: órganos a medida que el cuerpo no rechace.",
+      "datoCurioso": "En 2019, un equipo de la Universidad de Tel Aviv imprimió un pequeño corazón con células humanas, con vasos sanguíneos incluidos, del tamaño de una cereza."
+    },
+    {
+      "id": "nanomedicina-inhalable",
+      "nombre": "Nanomedicina inhalable",
+      "zona": "pulmones",
+      "categoria": "mapa",
+      "area": "Nanotecnología",
+      "icono": "🫁",
+      "estado": "En pruebas",
+      "explicacion": "Partículas miles de veces más pequeñas que un cabello transportan medicamentos directamente a las células del pulmón, para tratar con menos dosis y menos efectos secundarios.",
+      "datoCurioso": "Las vacunas de ARNm usan nanopartículas de lípidos: diminutas «burbujas» de grasa que protegen el mensaje genético hasta que llega a las células."
+    },
+    {
+      "id": "protesis-bionica",
+      "nombre": "Prótesis biónicas impresas en 3D",
+      "zona": "brazos",
+      "categoria": "mapa",
+      "area": "Impresión 3D y robótica",
+      "icono": "🦾",
+      "estado": "Ya existe",
+      "explicacion": "Sensores sobre la piel captan las señales eléctricas de los músculos y pequeños motores mueven los dedos de la prótesis. La impresión 3D permite fabricarlas a medida y a menor costo.",
+      "datoCurioso": "Comunidades de voluntarios como e-NABLE han impreso miles de manos y brazos para niños de todo el mundo, compartiendo los diseños de forma gratuita."
+    },
+    {
+      "id": "implantes-oseos-3d",
+      "nombre": "Implantes óseos impresos en 3D",
+      "zona": "huesos",
+      "categoria": "mapa",
+      "area": "Impresión 3D",
+      "icono": "🦴",
+      "estado": "Ya existe",
+      "explicacion": "A partir de una tomografía se diseña una pieza de titanio o biomaterial con la forma exacta del hueso que hay que reemplazar, y se imprime capa a capa.",
+      "datoCurioso": "Muchos de estos implantes tienen una estructura porosa, como una esponja, para que el hueso natural crezca por dentro y se integre con la pieza."
+    },
+    {
+      "id": "edicion-crispr",
+      "nombre": "Edición genética CRISPR",
+      "zona": "adn",
+      "categoria": "mapa",
+      "area": "Edición genética",
+      "icono": "🧬",
+      "estado": "Ya existe",
+      "explicacion": "CRISPR funciona como unas «tijeras moleculares» guiadas: localiza un fragmento concreto del ADN y lo corta para corregirlo, desactivarlo o reemplazarlo.",
+      "datoCurioso": "CRISPR se inspira en un sistema de defensa de las bacterias contra los virus. Sus descubridoras, Emmanuelle Charpentier y Jennifer Doudna, recibieron el Nobel de Química en 2020."
+    },
+    {
+      "id": "telemedicina",
+      "nombre": "Telemedicina",
+      "zona": null,
+      "categoria": "tarjeta",
+      "area": "Conectividad e inteligencia artificial",
+      "icono": "🩺",
+      "estado": "Ya existe",
+      "explicacion": "Consultas por videollamada, recetas electrónicas y monitoreo a distancia acercan al médico a lugares donde antes no llegaba.",
+      "datoCurioso": "Durante la pandemia de COVID-19, las consultas a distancia pasaron en pocas semanas de ser algo raro a algo cotidiano en muchos países."
+    },
+    {
+      "id": "cirugia-robotica",
+      "nombre": "Cirugía robótica",
+      "zona": null,
+      "categoria": "tarjeta",
+      "area": "Robótica",
+      "icono": "🤖",
+      "estado": "Ya existe",
+      "explicacion": "El cirujano opera desde una consola y controla brazos robóticos con instrumentos diminutos y una cámara 3D. El sistema filtra el temblor natural de las manos.",
+      "datoCurioso": "Los sistemas de cirugía robótica más usados ya suman millones de procedimientos en todo el mundo, sobre todo en urología, ginecología y cirugía general."
+    },
+    {
+      "id": "wearables",
+      "nombre": "Wearables de salud",
+      "zona": null,
+      "categoria": "tarjeta",
+      "area": "Sensores e inteligencia artificial",
+      "icono": "⌚",
+      "estado": "Ya existe",
+      "explicacion": "Relojes, anillos y parches con sensores miden de forma continua el pulso, el sueño o el oxígeno en sangre y alertan de cambios inusuales.",
+      "datoCurioso": "Algunos relojes inteligentes pueden registrar un electrocardiograma sencillo y avisar si detectan un ritmo cardíaco irregular."
+    },
+    {
+      "id": "realidad-virtual",
+      "nombre": "Realidad virtual en rehabilitación",
+      "zona": null,
+      "categoria": "tarjeta",
+      "area": "Realidad virtual",
+      "icono": "🥽",
+      "estado": "Ya existe",
+      "explicacion": "Ejercicios convertidos en juegos inmersivos ayudan a recuperar movimiento tras un ictus o una lesión, y motivan a repetir sin aburrirse.",
+      "datoCurioso": "La realidad virtual también se usa para distraer del dolor durante curas y procedimientos: el cerebro, ocupado en el mundo virtual, presta menos atención a las molestias."
+    },
+    {
+      "id": "medicina-personalizada",
+      "nombre": "Medicina personalizada",
+      "zona": null,
+      "categoria": "tarjeta",
+      "area": "Genómica e inteligencia artificial",
+      "icono": "🧪",
+      "estado": "En pruebas",
+      "explicacion": "Combinar información genética con IA permite elegir el tratamiento y la dosis más adecuados para cada paciente, en lugar de «uno para todos».",
+      "datoCurioso": "El mismo medicamento puede funcionar muy bien, no hacer efecto o causar más efectos secundarios según la genética de cada persona: de eso se ocupa la farmacogenómica."
+    }
+  ]
+}

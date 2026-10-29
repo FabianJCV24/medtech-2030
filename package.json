@@ -1,0 +1,30 @@
+{
+  "name": "medtech-2030",
+  "version": "1.0.0",
+  "description": "MedTech 2030: el cuerpo humano reinventado por la tecnología. Web informativa e interactiva con API REST en Express, sin base de datos.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "medtech",
+    "salud",
+    "inteligencia-artificial",
+    "express",
+    "educativo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "nodemailer": "^10.2.1"
+  }
+}
